@@ -1,0 +1,20 @@
+<div class="container">
+  <ul class="col-md-6 col-md-offset-3">
+    <form>
+      <div class="form-group">
+        <label for="nomePessoa">Nome da Pessoa</label>
+        <input type="text" name = "name_Post" id = "name_Post" class="form-control" id="nomePessoa" placeholder="Nome da Pessoa"
+        [(ngModel)] = "nome_Post"    >
+      </div>
+      <div class="form-group">
+        <label for="texto">Texto</label>
+        <input type="text" name = "texto_Post" id = "texto_Post" class="form-control" id="texto" placeholder="Texto" [(ngModel)] = "texto_Post" >
+      </div>
+
+      <button (click)="enviarPost($event);" 
+      class="btn btn-default" routerLink ="/timelinha" >Enviar
+      </button>
+      <!-- <button type="submit" class="btn btn-default">Enviar</button> -->
+    </form>
+  </ul>
+</div>
